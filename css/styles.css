@@ -81,11 +81,12 @@ hr {
 }
 img#myProfilePicture {
     margin-top: 3rem;
-    max-width: 200px;
-    @media (min-width: 960px) {
-        img#myProfilePicture {
-        max-width:400px
-        }
+    max-width: 250px;
+}
+@media (min-width: 960px) {
+    img#myProfilePicture {
+        max-width: 400px;
+    }
 }
 .skill-row {
     width: 50%;
