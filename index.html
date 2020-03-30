@@ -4,138 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/514ec47f32.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Jesus Bohorquez</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Montserrat:400,700|Sacramento&display=swap" rel="stylesheet">
 </head>
 
+
+
 <body>
-    <div class="header">
-        <img src="img/cloud.png" class="cloud-top" alt="cloud-img">
-        <h1>I'm Jesus</h1>
-        <h2> Web Designer & Developer</h2>
-        <div class="mountain-c">
-            <img src="img/cloud.png" class="cloud" alt="cloud-img">
-            <img src="img/dayoff.svg" class="mount" alt="mountain-img">
-        </div>
-    </div>
 
-    <main class="middle-container">
-        <div class="profile">
-            <img src="img/profile.jpg" alt="profile-picture" id="myProfilePicture">
-            <h2>Hello.</h2>
-            <p id="bio">I am a web designer and developer. I love languages and technology. What can I tell you about me? I like Art, reading, and Fantasy. The Lord of the Rings is my favorite Universe.
-            </p>
-        </div>
-        <hr>
+    <nav class="nav">
+        <a href="index.html" class="logo">LOGO</a>
 
-        <h2>My Skills.</h2>
-        <section class="skills">
-            <!-- #1 -->
-            <div class="skill-row">
-                <img class="float-left" src="img/html5.svg" alt="HTML5">
+        <ul id="responsive-navbar">
+            <li><a href="#bio">BIO</a></li>
+            <li><a href="#skill">SKill</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="btn-pink"><a href="#contact">Contact</a></li>
 
-                <h3>HTML</h3>
-                <p>I'm really good at Semantic HTML and some preprocessors such as Pug.</p>
-            </div>
+        </ul>
+        <i class="fas fa-bars mobile-menu"></i>
+    </nav>
 
-            <!-- #2 -->
-            <div class="skill-row">
-                <img class="float-right" src="img/css.svg" alt="CCS3">
+    <header class="portfolio-hero">
+        <div></div>
+        <h1>I'm Jesus Bohorquez
+            <br>
+            <span>A web Developer & Designer</span>
+        </h1>
+        <a href="#bio"><img src="/img/descargar.svg" alt="button down"></a>
+    </header>
 
-                <h3>CSS3</h3>
-                <p>I am really knowledgable about CSS. I have a strong domain on Flex, Grid, CSS Animation, and much more.</p>
-            </div>
+    <main id="content">
+        <section class="bio" id="bio">
+
+            <section class="bio-picture">
+                <img src="./img/ich.png" alt="Jesus">
+                <h2>Jesús Bohórquez</h2>
+            </section>
 
 
-            <div class="skill-row">
-                <img class="float-left  " src="img/js.svg" alt="Javascript">
+            <!-- BIO -->
+            <section class="bio-info">
+                <h3 class="bio-title">Hello, There!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis, est id laoreet interdum, sem nunc gravida dolor, sit amet pretium lorem nisi non magna. Quisque placerat vel erat eget congue. Suspendisse gravida ex turpis,
+                    vitae blandit nisl faucibus a. Quisque maximus bibendum cursus. Curabitur tristique, libero eget ullamcorper venenatis, urna elit sollicitudin orci, ac euismod quam ex quis sem. Sed dapibus ligula eu leo consectetur ullamcorper. Quisque
+                    imperdiet mauris ut purus cursus bibendum. Nam et sapien sed ipsum euismod ullamcorper. Cras mattis sagittis metus elementum commodo. Praesent eu risus mollis, molestie elit sit amet, hendrerit augue. Morbi quis porttitor magna.
+                </p>
+                <p> In sagittis nisl quis dolor malesuada pulvinar. Vivamus in sem et ex maximus posuere tristique egestas tellus. Nunc sollicitudin in sapien eu efficitur. Proin eu urna ut eros congue porta ut quis est. Aliquam ut erat id eros dictum viverra
+                    eu et felis. Sed malesuada libero mi, eget pharetra ligula fringilla eu. Aenean porttitor consectetur volutpat. Quisque sit amet tellus pellentesque, accumsan nunc quis, semper lacus. Suspendisse fringilla libero bibendum, finibus
+                    diam a, auctor leo. Nam a justo augue. Fusce pellentesque dolor libero, nec venenatis enim placerat eu.</p>
 
-                <h3>Javascript</h3>
-                <p>I also know and use Javascript for my projects and my work.</p>
-            </div>
-
-
-            <div class="skill-row">
-                <img class="float-right" src="img/jquery.svg" alt="jquery">
-
-                <h3>Jquery</h3>
-                <p>And how to forget ehe Old Good jquery, which, albeit old, yet quite helpful and handy</p>
-            </div>
-
-
-            <div class="skill-row">
-                <img class="float-left" src="./img/icons8-sass.svg " alt="SASS">
-
-                <h3>SASS</h3>
-                <p>I also will bring in my favorite CSS pre-processor, SASS, specifically SCCS (Sassy CSS)</p>
-            </div>
-
-
-
-            <div class="skill-row ">
-
-                <img class="float-right" src="img/github.svg" alt="GitHub">
-
-                <h3>GitHub</h3>
-                <p>And from Version Control, I use GitHub, the one I have been using for some time, and my favorite.</p>
-
-            </div>
-
-        </section>
-        <hr>
-        <h2>Hereby I leave me 5 favorite projects.</h2>
-        <section class="projects">
-
-
-            <a href="https://adoring-davinci-76e075.netlify.com/" target="_blank">
-                <h3>CONFERENCE</h3>
-                <img src="./img/conference.png" alt="LIMA CONFERENCE WEBSITE">
-            </a>
-
-            <a href="https://sharp-jones-0c540e.netlify.com/" target="_blank">
-                <h3>Club Del Cafe</h3>
-                <img src="./img/cafe.png" alt="Blog De Cafe">
-            </a>
-
-            <a href="https://thirsty-shirley-b8ed7f.netlify.com/index.html" target="_blank">
-                <h3>Bienes Raices</h3>
-                <img src="./img/bienes.png" alt="Bienes Raices">
-            </a>
-
-            <a href="https://fervent-ptolemy-179f14.netlify.com/" target="_blank">
-                <h3>Festival</h3>
-                <img src="./img/festival.png" alt="Festival Tours">
-            </a>
-
-            <a href="https://determined-raman-492d3c.netlify.com/" target="_blank">
-                <h3>CONFERENCE</h3>
-                <img src="./img/tindog.png" alt="TinDog">
-            </a>
-
+            </section>
         </section>
 
 
 
-        <div class="contact-me ">
-            <h2>Contact Me</h2>
-            <h3>If you like my work</h3>
-            <p class="contact-msg ">In case of having any question of doubt, don't hesitate in contacting me by clicking the button below.</p>
-            <a class="myButton " href="mailto:bohorquez866@gmail.com ">CONTACT ME</a>
-        </div>
+        <section class="skill" id="skill">
+            <h2>SKILL</h2>
+
+            <section class="skill-items">
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+
+                    <h3>HTML</h3>
+
+                </article>
+
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-css3"></ion-icon>
+                    </div>
+
+                    <h3>CSS</h3>
+
+                </article>
+
+
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-sass"></ion-icon>
+                    </div>
+
+                    <h3>SASS</h3>
+
+                </article>
 
 
 
-        <div class="bottom-container">
-            <a class="footer-link " href="https://www.linkedin.com/bohorquez866"><img src="./img/linkedin.svg" alt="linkedin"></a>
-            <a class="footer-link " href="https://fiverr.com/bohorquez866"><img src="./img/fiverr.svg" alt="Fiverr"></a>
-            <a class="footer-link " href="https://www.upwork.com/freelancers/~018aeb3d08869fe918"><img src="./img/upwork.png" alt="upwork"></a>
-            <p>© 2020 Jesús R. Bohórquez.</p>
-        </div>
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-javascript"></ion-icon>
+                    </div>
+
+                    <h3>Javascript</h3>
+
+                </article>
 
 
+
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-react"></ion-icon>
+                    </div>
+
+                    <h3>React</h3>
+
+                </article>
+
+                <article class="skill-items__item">
+                    <article class="float-description">
+                        <p>LOREM IPSUM</p>
+                    </article>
+                    <div class="skill-items__item-logo">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+
+                    <h3>GitHub</h3>
+
+                </article>
+
+
+                </div>
+
+
+            </section>
+
+        </section>
+        <!-- PORTFOLIO -->
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <section class="portfolio_items">
+
+                <article>
+                    <a href=""><img src="./img/festival.png" alt="FestivalWebsite">
+                        <p>Festival</p>
+                    </a>
+                </article>
+
+
+                <article>
+                    <a href=""><img src="./img/festival.png" alt="FestivalWebsite">
+                        <p>Lima Event</p>
+                    </a>
+
+                </article>
+
+
+
+                <article>
+                    <a href=""><img src="./img/festival.png" alt="FestivalWebsite">
+                        <p>Bienes Raices</p>
+                    </a>
+
+                </article>
+
+            </section>
+
+
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <article class="contact-form__wrapper">
+                <img src="./img/contact-vector.svg" alt="Contact Vector">
+                <form action="mailto:bohorquez866@gmail.com" method="get" enctype="text/plain">
+                    <h2>Contact Me</h2>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Comments"></textarea>
+                    <input type="submit" value="Contact Me" class="btn-pink center-btn">
+                </form>
+            </article>
+        </section>
+
+    </main>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
