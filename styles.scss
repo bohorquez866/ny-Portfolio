@@ -157,10 +157,10 @@ i {
         display: block;
         position: relative;
         text-align: center;
-        padding-top: 20rem;
+        transform: translateY(calc(50vh - 10rem));
         margin: 0;
         font-size: 3.6rem;
-        font-weight: 300;
+        font-weight: normal;
         color: $white;
         z-index: 1000;
         filter: blur(0);
@@ -379,7 +379,6 @@ i {
 
 @media (min-width: 768px) {
     h1.pulse {
-        padding-top: 20rem;
         font-size: 7.2rem;
     }
     .mobile-menu {
