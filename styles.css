@@ -25,19 +25,10 @@ h2 {
   text-align: center;
 }
 
-h1,
-h2,
-.bio-title {
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-}
-
 h1:hover,
-h2:hover,
-.bio-title:hover {
-  -webkit-transform: skewY(5deg) skewX(5deg);
-          transform: skewY(5deg) skewX(5deg);
-  text-shadow: 0 .5rem 2rem #000;
+h2:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 ::-moz-selection {
@@ -54,8 +45,8 @@ h2:hover,
 
 .btn-pink {
   background-color: #E91E63;
-  -webkit-box-shadow: 3px 0px 23px -6px #de1840;
-          box-shadow: 3px 0px 23px -6px #de1840;
+  -webkit-box-shadow: 3px 0px 11px -5px #de1840;
+          box-shadow: 3px 0px 11px -5px #de1840;
   border-radius: 10rem;
   text-align: center;
   padding: .5rem 0;
@@ -84,9 +75,10 @@ h2:hover,
 i {
   position: absolute;
   right: 1rem;
-  top: .8rem;
+  top: .5rem;
   font-size: 3.5rem;
   cursor: pointer;
+  color: #fff;
 }
 
 .nav {
@@ -184,13 +176,14 @@ i {
   text-align: center;
   padding-top: 20rem;
   margin: 0;
-  font-size: 4.2rem;
+  font-size: 3.6rem;
+  font-weight: 300;
   color: #fff;
   z-index: 1000;
   -webkit-filter: blur(0);
           filter: blur(0);
   line-height: 1.5;
-  width: 95%;
+  width: 100%;
 }
 
 .portfolio-hero img {
@@ -488,6 +481,10 @@ i {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    padding-top: 25rem;
+    font-size: 6.2rem;
+  }
   .mobile-menu {
     display: none;
   }
@@ -555,5 +552,40 @@ i {
   .contact .btn-pink {
     padding: 1.5rem 0;
   }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 /*# sourceMappingURL=styles.css.map */

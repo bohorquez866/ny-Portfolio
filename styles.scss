@@ -39,12 +39,10 @@ h2 {
 }
 
 h1,
-h2,
-.bio-title {
-    transition: all .3s ease-out;
+h2 {
     &:hover {
-        transform: skewY(5deg) skewX(5deg);
-        text-shadow: 0 .5rem 2rem #000;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
     }
 }
 
@@ -59,7 +57,7 @@ h2,
 
 .btn-pink {
     background-color: $btn-color;
-    box-shadow: 3px 0px 23px -6px rgba(222, 24, 64, 1);
+    box-shadow: 3px 0px 11px -5px #de1840;
     border-radius: 10rem;
     text-align: center;
     padding: .5rem 0;
@@ -83,9 +81,10 @@ h2,
 i {
     position: absolute;
     right: 1rem;
-    top: .8rem;
+    top: .5rem;
     font-size: 3.5rem;
     cursor: pointer;
+    color: $white;
 }
 
 .nav {
@@ -161,12 +160,13 @@ i {
         text-align: center;
         padding-top: 20rem;
         margin: 0;
-        font-size: 4.2rem;
+        font-size: 3.6rem;
+        font-weight: 300;
         color: $white;
         z-index: 1000;
         filter: blur(0);
         line-height: 1.5;
-        width: 95%;
+        width: 100%;
     }
     img {
         width: 4rem;
@@ -379,6 +379,10 @@ i {
 }
 
 @media (min-width: 768px) {
+    h1 {
+        padding-top: 25rem;
+        font-size: 6.2rem;
+    }
     .mobile-menu {
         display: none;
     }
@@ -424,4 +428,40 @@ i {
             padding: 1.5rem 0;
         }
     }
+}
+
+//ANIMATION PULSE
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
