@@ -94,7 +94,6 @@ i {
   width: 100%;
   position: fixed;
   z-index: 100;
-  position: relative;
 }
 
 .nav a {
@@ -481,9 +480,9 @@ i {
 }
 
 @media (min-width: 768px) {
-  h1 {
-    padding-top: 25rem;
-    font-size: 6.2rem;
+  h1.pulse {
+    padding-top: 20rem;
+    font-size: 7.2rem;
   }
   .mobile-menu {
     display: none;
@@ -550,7 +549,7 @@ i {
             justify-content: space-between;
   }
   .contact .btn-pink {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 }
 
