@@ -173,8 +173,8 @@ i {
   display: block;
   position: relative;
   text-align: center;
-  -webkit-transform: translateY(calc(50vh - 9rem));
-          transform: translateY(calc(50vh - 9rem));
+  -webkit-transform: translateY(calc(50vh - 11rem));
+          transform: translateY(calc(50vh - 11rem));
   margin: 0;
   font-size: 3.6rem;
   font-weight: normal;
